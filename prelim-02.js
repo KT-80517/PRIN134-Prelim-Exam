@@ -4,11 +4,11 @@
 // Your task is to find and fix the bugs so that it properly returns the correct message.
 
 function checkVotingEligibility(age, isCitizen) {
-    if (age > 18 && isCitizen == true) {
+    if (age >= 18 && isCitizen == true) {
         return "You are eligible to vote.";
     } else if (age < 18) {
         return "You are not old enough to vote.";
-    } else {
+    } else  {
         return "You must be a citizen to vote.";
     }
 }
